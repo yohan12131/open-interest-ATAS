@@ -1,0 +1,131 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>mi_indicador</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevLib.Drawing" Version="2.17.8" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.19.0" />
+    <PackageReference Include="Microsoft.VisualBasic" Version="10.3.0" />
+    <PackageReference Include="Serilog" Version="2.12.0" />
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+    <PackageReference Include="TeeChart" Version="2.4.0" />
+    <PackageReference Include="XtraReportsControls" Version="17.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ATAS.Indicators">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\ATAS.Indicators.dll</HintPath>
+    </Reference>
+    <Reference Include="ATAS.Indicators.Other">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\ATAS.Indicators.Other.dll</HintPath>
+    </Reference>
+    <Reference Include="ATAS.Indicators.Technical">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\ATAS.Indicators.Technical.dll</HintPath>
+    </Reference>
+    <Reference Include="ATAS.QuikStarter">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\ATAS.QuikStarter.dll</HintPath>
+    </Reference>
+    <Reference Include="ATAS.Strategies">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\ATAS.Strategies.dll</HintPath>
+    </Reference>
+    <Reference Include="ATAS.Types">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\ATAS.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.Designer.v22.1">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Charts.Designer.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v22.1.Core">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Charts.v22.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v22.1">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.CodeParser.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v22.1">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Data.Desktop.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v22.1">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Data.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v22.1">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.DataAccess.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataVisualization.v22.1.Core">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.DataVisualization.v22.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Docs.v22.1">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Docs.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v22.1">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Drawing.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v19.2">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Mvvm.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v22.1">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Mvvm.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v22.1.Core">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Office.v22.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v22.1.Core">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Pdf.v22.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v22.1.Drawing">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Pdf.v22.1.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v22.1.Core">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Printing.v22.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Layout.v22.1.Core">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Xpf.Layout.v22.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.LayoutControl.v22.1">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Xpf.LayoutControl.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Printing.v22.1.resources">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\de\DevExpress.Xpf.Printing.v22.1.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Ribbon.v22.1">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Xpf.Ribbon.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.RichEdit.v22.1">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Xpf.RichEdit.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2019Colorful.v22.1">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Xpf.Themes.Office2019Colorful.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.VS2017Dark.v22.1">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Xpf.Themes.VS2017Dark.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.VS2017Light.v22.1">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Xpf.Themes.VS2017Light.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v22.1">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.Xpo.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v22.1">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\DevExpress.XtraCharts.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="OFT.Localization.resources">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\es-es\OFT.Localization.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="OFT.Platform.resources">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\es-es\OFT.Platform.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="OFT.Rendering">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\OFT.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Utils.Common">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\Utils.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Utils.Xaml">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ATAS Platform\Utils.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
